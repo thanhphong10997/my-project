@@ -1,0 +1,15 @@
+
+
+* {box-sizing: inherit;}
+
+html {
+	/*fontsize 100% = 16px*/
+	font-size: 62.5%;
+	/*fontsize 62.5% => 1rem = 10px*/
+	line-height: 1.6rem;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+
+

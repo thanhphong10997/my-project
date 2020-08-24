@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Phong's Shop</title>
+	<link rel="stylesheet" href="./scss/normalize.css">
+	<link rel="stylesheet" href="./scss/base.css">
+	<link rel="stylesheet" href="./scss/style.css">
+	<link rel="stylesheet" href="./fonts/fontawesome-free-5.13.0/css/all.min.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="wrapper">
+	<div class="header">
+		<div class="container-fluid">
+				<div class="row">
+					 <div class=" nav-home">
+
+						<div class="d-lg-none d-block col-md-2 col-sm-2">
+							<div class="menu-mobile">
+								
+								<label for="menu-mobile-input">
+
+									<i class="fas fa-bars icon-menu"></i>
+								</label>
+								
+							</div> 
+					
+						</div>
+						<!-- Logo-home -->
+						<div class="col-xl-1 col-lg-2 col-md-6  offset-lg-0 col-sm-4 col-4 ">
+							<a href="index.html" class="logo-nav">
+								<img class="logo" src="https://mixigaming.com/wp-content/uploads/2019/08/logo-mixigaming-300x157.png" alt="logoshop">
+							</a> 
+					
+						</div>
+
+						<!-- Nav-List -->
+						<div class="d-none d-lg-block col-md-6 col-xl-9 col-lg-7">
+							<ul class="navigation-list">
+								<li class="navigation-item">
+									<a class="navigation-link navigation-link--slide-bar" href="#">
+										HOME
+									</a>
+								</li>
+								<li class="navigation-item">
+									<a class="navigation-link" href="sneaker.html">
+										SNEAKERS
+									</a>
+										<div class="sneaker">
+											<ul class="sneaker-list">
+												<li class="sneaker-item">
+													<a href="#" class="sneaker-link">
+														Nike
+													</a>
+												</li>
+												<li class="sneaker-item">
+													<a href="#" class="sneaker-link">
+														Adidas
+													</a>
+												</li>
+												<li class="sneaker-item">
+													<a href="#" class="sneaker-link">
+														Vans
+													</a>
+												</li>
+												<li class="sneaker-item">
+													<a href="#" class="sneaker-link">
+														Converse
+													</a>
+												</li>
+											</ul>
+										</div>
+								</li>
+								<li class="navigation-item">
+									<a class="navigation-link" href="#">
+										BAGS
+									</a>
+									<div class="bag">
+										<ul class="bag-list">
+											<li class="bag-item">
+												<a href="#" class="bag-link">Vans</a>
+											</li>
+											<li class="bag-item">
+												<a href="#" class="bag-link">SuperDry</a>
+											</li>
+											<li class="bag-item">
+												<a href="#" class="bag-link">Herchels</a>
+											</li>
+											<li class="bag-item">
+												<a href="#" class="bag-link">Timberland</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="navigation-item">
+									<a class="navigation-link" href="#">
+										ACCESSORIES									
+									</a>
+									<div class="accessories">
+										<ul class="accessories-list">
+											<li class="accessories-item">
+												<a href="#" class="accessories-link">Siling Bags</a>
+											</li>
+											<li class="accessories-item">
+												<a href="#" class="accessories-link">Caps</a>
+											</li>
+											<li class="accessories-item">
+												<a href="#" class="accessories-link">Belts</a>
+											</li>
+											<li class="accessories-item">
+												<a href="#" class="accessories-link">Socks</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="navigation-item">
+									<a class="navigation-link navigation-link--slide-bar" href="#">
+										SALES
+									</a>
+								</li>
+								<li class="navigation-item">
+									<a class="navigation-link navigation-link--slide-bar" href="#">
+										INTRODUCE
+									</a>
+								</li>
+								<li class="navigation-item">
+									<a class="navigation-link navigation-link--slide-bar" href="#">
+										CONTACT
+									</a>
+								</li>
+							
+								
+							</ul>
+						</div>
+						
+						<!-- User-list -->
+						<div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 ">
+							<ul class="user-list">
+								<div class="search-nav">
+									<form>
+										<input class="search-input" type="text" name="search" placeholder="Tìm kiếm sản phẩm">
+									</form>	
+									<i class="fas fa-search icon-search"></i>
+								</div>
+								<li class="user-item">
+									<a href="#" class="user-link user-icon-link">
+										<label class="fas fa-user icon-user" for="user-interface"></label>
+									</a>		
+								</li>
+							
+								<li class="user-item ">
+									<a href="#" class="user-link wrapper-shopcart ">
+
+										<i class="fas fa-shopping-cart icon-shopcart"></i>
+										<span class="icon-shopcart-quantity">2</span>
+									</a>
+
+									<!-- Shopcart-Dropdown-Has-Product-->
+									<div class="shopcart-dropdown-has-product">
+										<ul class="shopcart-dropdown-list">
+											<li class="shopcart-dropdown-item">
+												<a href="#" class="shopcart-dropdown-img">
+														<img src="./imgs/products/bags-product-7.jpg" alt="Bag">													
+												</a>
+												<div class="shopcart-dropdown-info">
+													<a href="#" class="shopcart-dropdown-description">Bag Kansen Camo</a>
+													<span class="shopcart-dropdown-quantity">
+														<p class="shopcart-dropdown-multiply">x</p>
+														<p class="shopcart-dropdown-number">1</p>
+													</span>
+													<p class="shopcart-dropdown-price">550.000đ</p>
+													<p class="shopcart-dropdown-remove">Xóa</p>
+												</div>	
+											</li>
+											<li class="shopcart-dropdown-item">
+												<a href="#" class="shopcart-dropdown-img">
+														<img src="https://product.hstatic.net/1000383440/product/07107daa-e7d6-4bf5-a7aa-ccb89d252883_e1cba3e33b944f1dbbfa3b762b7cc0aa_grande.jpeg" alt="Jordan 1 Red">													
+												</a>
+												<div class="shopcart-dropdown-info">
+													<a href="#" class="shopcart-dropdown-description">Jordan 1 Low Reverse Red</a>
+													<span class="shopcart-dropdown-quantity">
+														<p class="shopcart-dropdown-multiply">x</p>
+														<p class="shopcart-dropdown-number">1</p>
+													</span>
+													<p class="shopcart-dropdown-price">4.550.000đ</p>
+													<p class="shopcart-dropdown-remove">Xóa</p>
+												</div>	
+											</li>
+											<li class="shopcart-dropdown-item">
+												<a href="#" class="shopcart-dropdown-img">
+														<img src="https://product.hstatic.net/1000383440/product/39a18e13-571e-4013-9ed3-eb58a5725d88_a376abf751c84f3d8d302227f4d1e5cf_grande.jpeg" alt="Jordan 1 MultiColor">													
+												</a>
+												<div class="shopcart-dropdown-info">
+													<a href="#" class="shopcart-dropdown-description">Jordan 1 MultiColor</a>
+													<span class="shopcart-dropdown-quantity">
+														<p class="shopcart-dropdown-multiply">x</p>
+														<p class="shopcart-dropdown-number">1</p>
+													</span>
+													<p class="shopcart-dropdown-price">4.750.000đ</p>
+													<p class="shopcart-dropdown-remove">Xóa</p>
+												</div>	
+											</li>
+											<li class="shopcart-dropdown-item">
+												<a href="#" class="shopcart-dropdown-img">
+														<img src="https://product.hstatic.net/1000383440/product/b70b7e1c-75df-4006-87ed-7dc941775e92_7187af5895514e51866847a7d517a710_grande.jpeg" alt="Jordan 1 Smoke Grey">													
+												</a>
+												<div class="shopcart-dropdown-info">
+													<a href="#" class="shopcart-dropdown-description">Jordan 1 Smoke Grey</a>
+													<span class="shopcart-dropdown-quantity">
+														<p class="shopcart-dropdown-multiply">x</p>
+														<p class="shopcart-dropdown-number">1</p>
+													</span>
+													<p class="shopcart-dropdown-price">4.190.000đ</p>
+													<p class="shopcart-dropdown-remove">Xóa</p>
+												</div>	
+											</li>
+											<li class="shopcart-dropdown-item">
+												<a href="#" class="shopcart-dropdown-img">
+														<img src="https://product.hstatic.net/1000383440/product/b70b7e1c-75df-4006-87ed-7dc941775e92_7187af5895514e51866847a7d517a710_grande.jpeg" alt="Jordan 1 Smoke Grey">													
+												</a>
+												<div class="shopcart-dropdown-info">
+													<a href="#" class="shopcart-dropdown-description">Jordan 1 Smoke Grey</a>
+													<span class="shopcart-dropdown-quantity">
+														<p class="shopcart-dropdown-multiply">x</p>
+														<p class="shopcart-dropdown-number">1</p>
+													</span>
+													<p class="shopcart-dropdown-price">4.190.000đ</p>
+													<p class="shopcart-dropdown-remove">Xóa</p>
+												</div>	
+											</li>
+											<li class="shopcart-dropdown-item">
+												<a href="#" class="shopcart-dropdown-img">
+														<img src="https://product.hstatic.net/1000383440/product/b70b7e1c-75df-4006-87ed-7dc941775e92_7187af5895514e51866847a7d517a710_grande.jpeg" alt="Jordan 1 Smoke Grey">													
+												</a>
+												<div class="shopcart-dropdown-info">
+													<a href="#" class="shopcart-dropdown-description">Jordan 1 Smoke Grey</a>
+													<span class="shopcart-dropdown-quantity">
+														<p class="shopcart-dropdown-multiply">x</p>
+														<p class="shopcart-dropdown-number">1</p>
+													</span>
+													<p class="shopcart-dropdown-price">4.190.000đ</p>
+													<p class="shopcart-dropdown-remove">Xóa</p>
+												</div>	
+											</li>
+										</ul>
+									</div>
+
+									<!-- Shopcart-Dropdown-no-product -->
+									<!-- <div class="shopcart-dropdown-no-product">
+										<p class="shopcart-dropdown-has-product-content">
+											Không có sản phẩm nào.
+										</p>
+									</div> -->
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+								
+  
+			</div>
+	</div>
+
+		<!-- The Modal -->
+	<!-- <div class="myModal"> -->
+		<input type="checkbox" name="" hidden id="menu-mobile-input" class="menu-nav-mobile">
+
+		<label for="menu-mobile-input" class="myModal-overlay"></label>
+		<div class="myModal-body">
+			<ul class="modal-menu-list">
+				<li class="modal-menu-item">
+					<a href="#" class="modal-menu-link">HOME</a>
+				</li>
+				<li class="modal-menu-item">
+					<a href="#" class="modal-menu-link">SNEAKERS</a>
+				</li>
+				<li class="modal-menu-item">
+					<a href="#" class="modal-menu-link">BAGS</a>
+				</li>
+				<li class="modal-menu-item">
+					<a href="#" class="modal-menu-link">ACCESSORIES</a>
+				</li>
+				<li class="modal-menu-item">
+					<a href="#" class="modal-menu-link">SALES</a>
+				</li>
+				<li class="modal-menu-item">
+					<a href="#" class="modal-menu-link">INTRODUCE</a>
+				</li>
+				<li class="modal-menu-item">
+					<a href="#" class="modal-menu-link">CONTACT</a>
+				</li>
+			</ul>	
+
+				<!-- <label for="menu-mobile-input" type="button" class="close icon-close" data-dismiss="modal">&times;</label> -->
+		</div>
+	<!-- </div> -->
+
+											<!-- Form sign in/sign up -->
+		<!-- <input type="checkbox" name="" hidden id="user-interface" class="user-icon-input"> -->
+
+		<label class="myModal-overlay" for="user-interface"></label>
+				<!-- Sign in -->
+		<div class="myModal-form-signin">
+			<form action="">
+				<div class="form-group">
+					<label for="email">Email address:</label>
+					<input type="email" class="form-control" placeholder="Enter email" id="email">
+				  </div>
+				  <div class="form-group">
+					<label for="pwd">Password:</label>
+					<input type="password" class="form-control" placeholder="Enter password" id="pwd">
+				  </div>
+				  <div class="form-group form-check">
+					<label class="form-check-label">
+					  <input class="form-check-input" type="checkbox"> Remember me
+					</label>
+				  </div>
+				  <button type="submit" class="btn btn-light btn-lg">Sign In</button>
+				  <button type="button" class="btn btn-light btn-lg button-change-signup">Sign Up</button>
+
+			</form>
+			<!-- <button for="user-interface" type="button" class="close icon-close-user" data-dismiss="modal">&times;</button> -->
+
+		</div>
+					<!-- Sign up -->
+		<div class="myModal-form-signup">
+			<form action="" class="needs-validation" novalidate>
+				<div class="form-group">
+				  <label for="uname">Username:</label>
+				  <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+				  <div class="valid-feedback">Valid.</div>
+				  <div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+				<div class="form-group">
+				  <label for="pwd">Password:</label>
+				  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+				  <div class="valid-feedback">Valid.</div>
+				  <div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+				<div class="form-group">
+					<label for="pwd">Retype Password:</label>
+					<input type="password" class="form-control" id="pwd" placeholder="Retype password" name="pswd" required>
+					<div class="valid-feedback">Valid.</div>
+					<div class="invalid-feedback">Please fill out this field.</div>
+				  </div>
+				<div class="form-group form-check">
+				  <label class="form-check-label">
+					<input class="form-check-input" type="checkbox" name="remember" required> I agree on ...
+					<div class="valid-feedback">Valid.</div>
+					<div class="invalid-feedback">Check this checkbox to continue.</div>
+				  </label>
+				</div>
+				<button type="submit" class="btn btn-light btn-lg">Sign Up</button>
+				<button type="button" class="btn btn-light btn-lg button-change-signin">Sign In</button>
+
+			  </form>
+			<!-- <button for="user-interface" type="button" class="close icon-close-user" data-dismiss="modal">&times;</button> -->
+
+		</div>
+
+
+	<div class="wrapper-carousel">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+			  <li data-target="#demo" data-slide-to="0" class="active"></li>
+			  <li data-target="#demo" data-slide-to="1"></li>
+			  <li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="./imgs/slide-1.jpg" alt="Los Angeles" width="1100" height="500">
+			  </div>
+			  <div class="carousel-item">
+				<img src="./imgs/slide-2.jpg" alt="Chicago" width="1100" height="500">
+			  </div>
+			  <div class="carousel-item">
+				<img src="./imgs/slide-3.jpg" alt="New York" width="1100" height="500">
+			  </div>
+			</div>
+			
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+			  <span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+			  <span class="carousel-control-next-icon"></span>
+			</a>
+		  </div>
+	</div>
+	<div class="wrapper-content">
+		<div class="container">
+			<!-- New Arrivals -->
+			<div class="row">
+				<h3 class="product-home-heading">New Arrivals</h3>
+
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/f06d0a8b-539d-4c55-9da8-abaa6fd598e2_3c0e432a91f842ccada13e902848dbcb_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>NMD R1 White GumNMD R1 White Gum NMD R1 White Gum NMD R1 White Gum NMD R1 White Gum </p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">1.200.000đ</span>
+								<span class="product-price--original">2.500.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6
+				 ">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/7b123178-34ff-4fd0-8713-94751847e92c_c5dee9a9a8e94126a8fc130b9b4226cf_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>NMD R1 Solid Red</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">2.100.000đ</span>
+								<span class="product-price--original">2.490.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/d0b3ef42-d516-4b53-bb60-8c65f555076b_00dea6ac9d2d401f8085c0b7da8ad576_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Nike AirForce 1</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">2.390.000đ</span>
+								<span class="product-price--original">2.750.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/39a18e13-571e-4013-9ed3-eb58a5725d88_a376abf751c84f3d8d302227f4d1e5cf_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Nike Jordan 1 Multi Color</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">4.190.000đ</span>
+								<span class="product-price--original">5.500.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/954f9f22-02bf-4424-980a-c0c7bbaa08a3_70fc02f51be44cfaa254f92119fa8d6c_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Nike Jordan 1 Mid Laser</p>
+							</a>
+							<div class="product-price ">
+								<span class="product-price--discounted"></span>
+								<span class="product-price--original no-discount">4.790.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/07107daa-e7d6-4bf5-a7aa-ccb89d252883_e1cba3e33b944f1dbbfa3b762b7cc0aa_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p> Jordan 1 Low Bred</p>
+							</a>
+							<div class="product-price ">
+								<span class="product-price--discounted"></span>
+								<span class="product-price--original no-discount ">4.200.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/db17d426-fe23-4335-90db-76839099f249_1ef8f26506174bc89138731d2d28dddc_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p> Jordan 1 Low Gym Red</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">1.200.000đ</span>
+								<span class="product-price--original">2.500.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/296ab78b-e2de-471b-adfa-495bd1f9f94e_654f04b1b7414ea19efee71eb68ba050_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Jordan 1 Low Mystic Green</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted"></span>
+								<span class="product-price--original no-discount">4.950.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Bags-->
+			<div class="row">
+				<h3 class="product-home-heading">Bags</h3>
+
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="./imgs/products/bags-product-1.jpg"  alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>KanKen Classic</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted"></span>
+								<span class="product-price--original no-discount">455.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="./imgs/products/bags-product-2.jpg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>SuperDry Black</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">890.000đ</span>
+								<span class="product-price--original">800.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="./imgs/products/bags-product-3.jpg">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Herchel Bag</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">950.000đ</span>
+								<span class="product-price--original">910.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="./imgs/products/bags-product-4.jpg">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Herchel Black Bag</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">990.000đ</span>
+								<span class="product-price--original">820.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="./imgs/products/bags-product-5.jpg">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Kansen Pink</p>
+							</a>
+							<div class="product-price ">
+								<span class="product-price--discounted"></span>
+								<span class="product-price--original no-discount">790.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="./imgs/products/bags-product-6.jpg">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p> TimberLand Bag</p>
+							</a>
+							<div class="product-price ">
+								<span class="product-price--discounted"></span>
+								<span class="product-price--original no-discount ">500.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="./imgs/products/bags-product-7.jpg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Converse Camo</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">890.000đ</span>
+								<span class="product-price--original">500.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="./imgs/products/bags-product-8.jpg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Herchel Pink</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted"></span>
+								<span class="product-price--original no-discount">725.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<h3 class="product-home-heading">Sales</h3>
+
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/341dc7aa-4768-477b-b94c-b108942f9b73_7f6e55c0c6274492a8ca25ce8a43d77e_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Ultra Boost 19 AllWhite</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">1.900.000đ</span>
+								<span class="product-price--original">2.900.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6
+				 ">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/06277547_8068966273154809856_n_1f8d09cb36454d6da688b78d581222ac_master_b7837e4275e848bda5d552cf605635a2_grande.jpg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Yeezy 700 Steal Blue</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">7.100.000đ</span>
+								<span class="product-price--original">5.490.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/9342982_500_a_8c36e17e1ae14e9d8a2fe66c7ed14961_grande.jpg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Fila Disruptor 2 CB Low</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">1.790.000đ</span>
+								<span class="product-price--original">2.750.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/94e01c5c-f4e4-466a-86d4-fd9d8efb9bbf_b3e44eb53d65447daf75e87fd96b5c55_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Adidas EQT ADV Red</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">4.190.000đ</span>
+								<span class="product-price--original">5.500.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/d7f643ed-bed0-495e-8431-1846d0f5b299_e36fcdc682964088abdc71e6c8b9514d_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Adidas Ultra Boost Red Coral</p>
+							</a>
+							<div class="product-price ">
+								<span class="product-price--discounted"></span>
+								<span class="product-price--original no-discount">2.790.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/12121233_67ee4982ea884a70b60653901ad5389e_grande.jpg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p> NMD R1 White Black</p>
+							</a>
+							<div class="product-price ">
+								<span class="product-price--discounted"></span>
+								<span class="product-price--original no-discount ">2.200.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/6b8d8cd0-c300-429e-906e-59e628ee8103_27d4a81b29784d5b88d7dbd350677fd4_grande.jpeg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p> Air Max 97 White Gold</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted">2.500.000đ</span>
+								<span class="product-price--original">2.790.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+						<a href="#" class="product-img-link">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<span class="">
+								
+								<img src="https://product.hstatic.net/1000383440/product/70536240_1917374828406421_7434610542817312768_n_88a87af45c5245168610469663643729_grande.jpg" alt="NMD R1">
+							</span>
+						</picture>
+						</a>
+						<div class="product-name">
+							<a href="#" class="product-name-link">
+
+								<p>Adidas Stan Smith Black White</p>
+							</a>
+							<div class="product-price">
+								<span class="product-price--discounted"></span>
+								<span class="product-price--original no-discount">4.950.000đ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-5 col-sm-8 col-6">
+					<div class="footer-col-1">
+						<span class="footer-logo">
+							<img src="https://mixigaming.com/wp-content/uploads/2019/08/logo-mixigaming-300x157.png" alt="logo-shop">
+						</span>
+						<div class="footer-shop-info">
+							<p>Địa chỉ: 232 Đoàn Văn Bơ P10 Q4</p>
+							<p>Email liên hệ: thanhphong0907@gmail.com</p>
+							<p>Sđt: 0775191592</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="footer-col-2">
+						<h3 class="footer-heading heading-col-2">Chính Sách</h3>
+						<ul class="footer-list-content">
+							<li class="footer-item-content">
+								<a href="#" class="footer-link-content">Chính sách bảo mật</a>
+							</li>	
+							<li class="footer-item-content">
+								<a href="#" class="footer-link-content">Chính sách đổi trả</a>
+							</li>
+							<li class="footer-item-content">
+								<a href="#" class="footer-link-content">Chính sách vận chuyển</a>
+							</li>
+							<li class="footer-item-content">
+								<a href="#" class="footer-link-content">Quy định sử dụng</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 offset-sm-3 offset-md-0 col-6">
+					<div class="footer-col-3">
+						<h3 class="footer-heading heading-col-3">Hỗ Trợ</h3>
+						<ul class="footer-list-content">
+							<li class="footer-item-content">
+								<a href="#" class="footer-link-content">Kiểm tra đơn hàng</a>
+							</li>	
+							<li class="footer-item-content">
+								<a href="#" class="footer-link-content">Giỏ Hàng</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 offset-sm-1 offset-md-0 col-6">
+					<div class="footer-col-4">
+						<h3 class="footer-heading">Liên Kết</h3>
+						<a href="#" class="footer-fb-link">
+							<i class="fab fa-facebook footer-icon-fb"></i>
+						</a>
+						<a href="#" class="footer-ins-link">
+							<i class="fab fa-instagram-square footer-icon-ins"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script	src="./js/script.js"></script>
+
+</body>
+</html>
+
+

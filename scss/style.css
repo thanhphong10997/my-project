@@ -1,0 +1,819 @@
+.disable {
+  display: none;
+}
+
+.appear {
+  display: block;
+}
+
+.header {
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.nav-home .logo-nav {
+  display: block;
+  height: 60px;
+}
+
+.nav-home .logo {
+  height: 100%;
+}
+
+.nav-home .menu-mobile {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-home .menu-mobile .icon-menu {
+  color: #fff;
+  font-size: 2.6rem;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.nav-home .menu-mobile button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.nav-home .navigation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-home .navigation-list a:hover {
+  text-decoration: none !important;
+}
+
+.nav-home .navigation-list .navigation-item {
+  padding: 0 10px;
+  position: relative;
+  height: 100%;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.nav-home .navigation-list .navigation-item .sneaker, .nav-home .navigation-list .navigation-item .bag, .nav-home .navigation-list .navigation-item .accessories, .nav-home .navigation-list .navigation-item .icon-search {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background-color: black;
+  width: 100%;
+  display: none;
+  line-height: 1.6rem;
+  opacity: 0;
+  -webkit-animation: fadeIn linear 0.3s;
+          animation: fadeIn linear 0.3s;
+}
+
+.nav-home .navigation-list .navigation-item .sneaker::before, .nav-home .navigation-list .navigation-item .bag::before, .nav-home .navigation-list .navigation-item .accessories::before, .nav-home .navigation-list .navigation-item .icon-search::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #fff;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: borderNav linear 0.3s;
+          animation: borderNav linear 0.3s;
+}
+
+.nav-home .navigation-list .navigation-item .sneaker-list, .nav-home .navigation-list .navigation-item .bag .bag-list, .nav-home .navigation-list .navigation-item .accessories .accessories-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-home .navigation-list .navigation-item .sneaker-list a:hover, .nav-home .navigation-list .navigation-item .bag .bag-list a:hover, .nav-home .navigation-list .navigation-item .accessories .accessories-list a:hover {
+  text-decoration: none !important;
+}
+
+.nav-home .navigation-list .navigation-item .sneaker-list .sneaker-item, .nav-home .navigation-list .navigation-item .bag .bag-list .sneaker-item, .nav-home .navigation-list .navigation-item .accessories .accessories-list .sneaker-item, .nav-home .navigation-list .navigation-item .sneaker-list .bag .bag-item, .nav-home .navigation-list .navigation-item .bag .sneaker-list .bag-item, .nav-home .navigation-list .navigation-item .bag .bag-list .bag-item, .nav-home .navigation-list .navigation-item .accessories .accessories-list .bag .bag-item, .nav-home .navigation-list .navigation-item .bag .accessories .accessories-list .bag-item, .nav-home .navigation-list .navigation-item .sneaker-list .accessories .accessories-item, .nav-home .navigation-list .navigation-item .accessories .sneaker-list .accessories-item, .nav-home .navigation-list .navigation-item .bag .bag-list .accessories .accessories-item, .nav-home .navigation-list .navigation-item .accessories .bag .bag-list .accessories-item, .nav-home .navigation-list .navigation-item .accessories .accessories-list .accessories-item {
+  padding-left: 10px;
+}
+
+.nav-home .navigation-list .navigation-item .sneaker-list .sneaker-item:hover, .nav-home .navigation-list .navigation-item .bag .bag-list .sneaker-item:hover, .nav-home .navigation-list .navigation-item .accessories .accessories-list .sneaker-item:hover, .nav-home .navigation-list .navigation-item .sneaker-list .bag .bag-item:hover, .nav-home .navigation-list .navigation-item .bag .sneaker-list .bag-item:hover, .nav-home .navigation-list .navigation-item .bag .bag-list .bag-item:hover, .nav-home .navigation-list .navigation-item .accessories .accessories-list .bag .bag-item:hover, .nav-home .navigation-list .navigation-item .bag .accessories .accessories-list .bag-item:hover, .nav-home .navigation-list .navigation-item .sneaker-list .accessories .accessories-item:hover, .nav-home .navigation-list .navigation-item .accessories .sneaker-list .accessories-item:hover, .nav-home .navigation-list .navigation-item .bag .bag-list .accessories .accessories-item:hover, .nav-home .navigation-list .navigation-item .accessories .bag .bag-list .accessories-item:hover, .nav-home .navigation-list .navigation-item .accessories .accessories-list .accessories-item:hover {
+  background-color: #444;
+}
+
+.nav-home .navigation-list .navigation-item .sneaker-list .sneaker-link, .nav-home .navigation-list .navigation-item .bag .bag-list .sneaker-link, .nav-home .navigation-list .navigation-item .accessories .accessories-list .sneaker-link, .nav-home .navigation-list .navigation-item .sneaker-list .bag .bag-link, .nav-home .navigation-list .navigation-item .bag .sneaker-list .bag-link, .nav-home .navigation-list .navigation-item .bag .bag-list .bag-link, .nav-home .navigation-list .navigation-item .accessories .accessories-list .bag .bag-link, .nav-home .navigation-list .navigation-item .bag .accessories .accessories-list .bag-link, .nav-home .navigation-list .navigation-item .sneaker-list .accessories .accessories-link, .nav-home .navigation-list .navigation-item .accessories .sneaker-list .accessories-link, .nav-home .navigation-list .navigation-item .bag .bag-list .accessories .accessories-link, .nav-home .navigation-list .navigation-item .accessories .bag .bag-list .accessories-link, .nav-home .navigation-list .navigation-item .accessories .accessories-list .accessories-link {
+  display: block;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.nav-home .navigation-list .navigation-item .bag {
+  width: 100px;
+}
+
+.nav-home .navigation-list .nav-item--active {
+  border-bottom: 2px solid #fff;
+}
+
+.nav-home .navigation-list .navigation-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+}
+
+.nav-home .navigation-list .navigation-link ~ div {
+  z-index: 1;
+}
+
+.nav-home .navigation-list .navigation-link--slide-bar::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #fff;
+  left: 50%;
+  bottom: -22px;
+  width: 100%;
+  -webkit-animation: borderNav linear 0.3s;
+          animation: borderNav linear 0.3s;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+.nav-home .navigation-list .navigation-link:hover {
+  text-decoration: none;
+}
+
+.nav-home .navigation-list .navigation-item:hover > .navigation-link--slide-bar::before {
+  display: block;
+}
+
+.nav-home .navigation-list .navigation-item:hover .sneaker, .nav-home .navigation-list .navigation-item:hover .bag, .nav-home .navigation-list .navigation-item:hover .accessories, .nav-home .navigation-list .navigation-item:hover .icon-search {
+  display: block;
+  opacity: 1;
+}
+
+.nav-home .user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-home .user-list a:hover {
+  text-decoration: none !important;
+}
+
+.nav-home .user-list .user-item {
+  position: relative;
+}
+
+.nav-home .user-list .icon-user {
+  margin: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.nav-home .user-list .user-item .wrapper-shopcart {
+  position: relative;
+  display: block;
+  width: 40px;
+}
+
+.nav-home .user-list .icon-shopcart {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.nav-home .user-list .icon-shopcart-quantity {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 16px;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #d60202;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-home .user-item i:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-home .user-item:hover .user-link {
+  color: rgba(255, 255, 255, 0.902);
+}
+
+.nav-home .user-link {
+  font-size: 1.5rem;
+  padding: 0 10px;
+  color: #fff;
+  width: 100%;
+}
+
+.nav-home .user-link:last-child {
+  padding-right: 0;
+}
+
+.search-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin-right: 5px;
+}
+
+.search-input {
+  height: 30px;
+  width: 150px;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+}
+
+.icon-search {
+  margin-left: 5px;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.shopcart-dropdown-has-product {
+  position: absolute;
+  background-color: black;
+  top: 42px;
+  right: 10px;
+  width: 400px;
+  max-height: 250px;
+  z-index: 5;
+  display: none;
+  overflow-y: auto;
+}
+
+.shopcart-dropdown-has-product .shopcart-dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shopcart-dropdown-has-product .shopcart-dropdown-list a:hover {
+  text-decoration: none !important;
+}
+
+.shopcart-dropdown-has-product .shopcart-dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.shopcart-dropdown-has-product .shopcart-dropdown-img img {
+  width: 50px;
+}
+
+.shopcart-dropdown-has-product .shopcart-dropdown-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.shopcart-dropdown-has-product .shopcart-dropdown-info p {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.shopcart-dropdown-has-product .shopcart-dropdown-info .shopcart-dropdown-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  width: 140px;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.shopcart-dropdown-has-product .shopcart-dropdown-info .shopcart-dropdown-quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shopcart-dropdown-has-product .shopcart-dropdown-info .shopcart-dropdown-quantity .shopcart-dropdown-multiply {
+  margin-right: 5px;
+}
+
+.shopcart-dropdown-has-product .shopcart-dropdown-info .shopcart-dropdown-remove:hover {
+  color: red;
+}
+
+.shopcart-dropdown-no-product {
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  top: 42px;
+  right: 10px;
+  width: 400px;
+  font-size: 1.4rem;
+  z-index: 1;
+}
+
+.myModal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 2;
+}
+
+.myModal-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  background-color: #111111;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform ease-in-out 0.3s;
+  transition: -webkit-transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
+}
+
+.myModal-body .modal-menu-list {
+  margin-top: 50px;
+}
+
+.myModal-body .modal-menu-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.myModal-body .modal-menu-link:hover {
+  background-color: #211f1f;
+}
+
+.myModal-body .icon-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  height: 40px;
+  width: 50px;
+  font-size: 3rem;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+}
+
+.myModal-body .icon-close:hover {
+  opacity: 0.2;
+  color: #fff;
+}
+
+.myModal-form-signup, .myModal-form-signin {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 300px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  z-index: 3;
+  background-color: #0c0a0a;
+  font-size: 1.5rem;
+  color: #fff;
+  display: none;
+}
+
+.myModal-form-signin {
+  height: 220px;
+}
+
+.user-icon-input:checked ~ .myModal-overlay {
+  display: block;
+}
+
+.user-icon-input:checked ~ .myModal-form-signin {
+  display: block;
+}
+
+.icon-close-user {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff !important;
+  opacity: 1 !important;
+  font-size: 2rem !important;
+  outline: none !important;
+}
+
+.menu-nav-mobile:checked ~ .myModal-overlay {
+  display: block;
+}
+
+.menu-nav-mobile:checked ~ .myModal-body {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-content {
+  background-color: black;
+}
+
+.wrapper-content .product-home-heading {
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.wrapper-content .product-home-heading::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #fff;
+  width: 60px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wrapper-content .product {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.wrapper-content .product img {
+  -webkit-box-shadow: 5px 5px #817a7a;
+          box-shadow: 5px 5px #817a7a;
+  width: 100%;
+}
+
+.wrapper-content .product .product-name {
+  margin-top: 5px;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.wrapper-content .product .product-name .product-name-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper-content .product .product-name .product-name-link p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.wrapper-content .product .product-name .product-price {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper-content .product .product-name .product-price .product-price--original {
+  margin-left: 10px;
+  color: #939393;
+  text-decoration: line-through;
+}
+
+.wrapper-content .product .product-name .product-price .product-price--discounted {
+  color: #d41111;
+}
+
+.wrapper-content .no-discount {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.wrapper-content .filter-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper-content .filter-menu-list a:hover {
+  text-decoration: none !important;
+}
+
+.wrapper-content .filter-menu-item, .wrapper-content .filter-price-group .filter-price-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.wrapper-content .filter-menu-link {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper-content .filter-menu-link:hover, .wrapper-content .sneakers-collapse-link:hover, .wrapper-content .filter-price-group .sort-price-list .sort-price-value:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.wrapper-content .plus-icon {
+  font-size: 1.2rem;
+}
+
+.wrapper-content .sneakers-collapse-link, .wrapper-content .filter-price-group .sort-price-list .sort-price-value {
+  font-size: 1.4rem;
+}
+
+.wrapper-content .filter-price-group {
+  color: #fff;
+  margin-top: 40px;
+}
+
+.wrapper-content .filter-price-group .filter-price-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.wrapper-content .filter-price-group .sort-price-list {
+  cursor: pointer;
+}
+
+.wrapper-content .filter-price-group .sort-price-list .sort-price-item {
+  padding: 8px 0;
+}
+
+.wrapper-content .filter-price-group .sort-price-list .sort-price-value {
+  padding-left: 10px;
+}
+
+footer {
+  color: #fff;
+  background-color: black;
+  padding: 40px 0;
+  border-top: 1px solid #fff;
+}
+
+footer .footer-col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer .footer-col-1 .footer-logo img {
+  height: 60px;
+}
+
+footer .footer-col-1 .footer-shop-info {
+  margin-left: 10px;
+}
+
+footer .footer-col-2, footer .footer-col-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-col-2 .footer-list-content, footer .footer-col-3 .footer-list-content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-col-2 .footer-list-content a:hover, footer .footer-col-3 .footer-list-content a:hover {
+  text-decoration: none !important;
+}
+
+footer .footer-col-2 .footer-link-content, footer .footer-col-3 .footer-link-content {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+footer .footer-col-2 .footer-link-content:hover, footer .footer-col-3 .footer-link-content:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer .footer-col-3 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-col-3 a:hover {
+  text-decoration: none !important;
+}
+
+footer .footer-col-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-col-4 i {
+  font-size: 1.8rem;
+  margin-left: 10px;
+  color: #fff;
+}
+
+@-webkit-keyframes borderNav {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes borderNav {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Laptops */
+@media (max-width: 992px) {
+  .logo-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-col-2, footer .footer-col-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .footer-col-2 .heading-col-2, footer .footer-col-3 .heading-col-2 {
+    padding-right: 38px;
+  }
+  .footer-col-4 {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .footer-col-3 {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 20px !important;
+  }
+  .footer-col-3 .heading-col-3 {
+    padding-right: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

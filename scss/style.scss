@@ -1,0 +1,798 @@
+$textColor: #333;
+$whiteColor: #fff;
+$blackColor: black;
+
+@mixin list-default {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	a:hover {
+		text-decoration: none !important;
+	}
+}
+
+@mixin center-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.disable {
+	display: none;
+}
+
+.appear {
+	display: block;
+}
+
+.header {
+	background-color: rgb(0,0,0);
+}
+ul {
+	list-style: none;
+	a {
+		text-decoration: none;
+		color: $whiteColor;
+	}
+}
+.nav-home {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	// .row {
+	// 	width: 100%;
+	// }
+	.logo-nav {
+		display: block;
+		height: 60px;
+	}
+	.logo {
+		height: 100%;
+	}
+
+	.menu-mobile {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		// display: none;
+		.icon-menu {
+			color: $whiteColor;
+			font: {
+				size: 2.6rem;
+			}
+			cursor: pointer;
+			margin-top: 5px;
+		}
+
+		button {
+			background-color: transparent;
+			border: none;
+			outline: none;
+		}
+	}
+
+	// Home Nav
+	.navigation-list {
+		@include list-default;
+		@include center-box();
+
+
+		.navigation-item {
+			padding: 0 10px;
+			position: relative;
+			height: 100%;
+			line-height: 60px;
+			cursor: pointer;
+			// Nav - hover
+			.sneaker {
+				position: absolute;
+				top: 60px;
+				left: 10px;
+				background-color: black;
+				width: 100%;
+				display: none;
+				line-height: 1.6rem;
+				opacity: 0;
+				animation: fadeIn linear 0.3s;
+			}
+
+			.sneaker::before {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 100%;
+				border: 2px solid $whiteColor;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				animation: borderNav linear 0.3s;
+			}
+
+			.sneaker-list {
+				@include list-default;
+				.sneaker-item {
+					padding-left: 10px
+				}
+
+				.sneaker-item:hover {
+					background-color: #444;
+				}
+				.sneaker-link {
+					display: block;
+					padding: 10px 0;
+					color: $whiteColor;
+					font: {
+						size: 1.4rem;
+					}
+				
+				}
+			}
+
+			
+
+			.bag {
+				@extend .sneaker;
+				width: 100px;
+
+				.bag-list {
+					@extend .sneaker-list;
+				}
+				.bag-item {
+					@extend .sneaker-item;
+				}
+				.bag-link {
+					@extend .sneaker-link;
+				}
+			}
+
+			.accessories {
+				@extend .sneaker;
+
+				.accessories-list {
+					@extend .sneaker-list;
+				}
+				.accessories-item {
+					@extend .sneaker-item;
+				}
+				.accessories-link {
+					@extend .sneaker-link;
+				}
+			}
+		}
+
+		.nav-item--active {
+			border-bottom: 2px solid $whiteColor;
+		}
+
+		.navigation-link {
+			font: {
+				size: 1.5rem;
+				weight: 500;
+				}
+			color: $whiteColor;
+			position: relative;
+		}
+
+		.navigation-link ~ div {
+			z-index: 1;
+		}
+
+		.navigation-link--slide-bar::before {
+			content: "";
+			position: absolute;
+			border: 2px solid $whiteColor;
+			// border-radius: 2px;
+			left: 50%;
+			bottom: -22px;
+			width: 100%;
+			animation: borderNav linear 0.3s;
+			transform: translateX(-50%);
+			display: none;
+		}
+
+		.navigation-link:hover {
+			text-decoration: none;
+		}
+
+		.navigation-item:hover > .navigation-link--slide-bar::before {
+			display: block;
+		}
+
+		.navigation-item:hover .sneaker {
+			display: block;
+			opacity: 1;
+
+		}
+	}
+
+	.user-list {
+		@include list-default;
+		@include center-box;
+		height: 100%;
+		justify-content: flex-end;
+		.user-item {
+			position: relative;
+		}
+
+		.icon-user {
+			margin: 0;
+			padding-right: 5px;
+			padding-left: 5px;
+			cursor: pointer;
+		}
+
+		.user-item .wrapper-shopcart {
+			position: relative;
+			display: block;
+			width: 40px;
+		}
+
+		.icon-shopcart {
+			color: $whiteColor;
+			font: {
+				size: 1.4rem;
+			}
+		}
+
+		.icon-shopcart-quantity {
+			position: absolute;
+			top: -10px;
+			right: 0;
+			width: 16px;
+			display: block;
+			border: 2px solid $whiteColor;
+			border-radius: 50%;
+			text-align: center;
+			background-color: #d60202;
+			font: {
+				size: 1rem;
+				weight: 500;
+			}
+		}
+
+
+	}
+
+		.user-item i:hover {
+			color: rgba(255,255,255,0.9);
+
+		}
+
+		.user-item:hover .user-link{
+			color: rgba(255, 255, 255, 0.902);
+		}
+
+		// .user-item--separate::before {
+		// 	content: "";
+		// 	display: block;
+		// 	border-left: 1px solid $whiteColor;
+		// 	position: absolute;
+		// 	left: 5px;
+		// 	top:50%;
+		// 	transform: translateY(-50%);
+		// 	height: 16px;
+		// }
+
+		
+
+		// .li:first-child ::before {
+		// 	display: none;
+		// }
+		.user-link {
+			font: {
+				size: 1.5rem;
+			}
+			padding: 0 10px;	
+			color: $whiteColor;
+			width: 100%;
+
+		}
+		.user-link:last-child {
+			padding-right: 0;
+		}		
+	}
+	
+	.search-nav {
+		@include center-box;
+		height: 100%;
+		margin-right: 5px;
+	}
+
+	.search-input {
+		height: 30px;
+		width: 150px;
+		outline: none;
+		border-radius: 20px;
+		border: none;
+	}
+
+	.icon-search {
+		@extend .sneaker;
+		margin-left: 5px;
+		color: $whiteColor;
+		font: {
+			size: 1.8rem;
+		}
+		cursor: pointer;
+
+	}
+
+										// Shopcart-Dropdown
+.shopcart-dropdown-has-product {
+
+	position: absolute;
+	background-color: black;
+	top: 42px;
+	right: 10px;
+	width: 400px;
+	max-height: 250px;
+	z-index: 5;
+	display: none;
+	overflow-y: auto;
+
+	.shopcart-dropdown-list {
+		@include list-default();
+	}
+	.shopcart-dropdown-item {
+		@include center-box();
+		margin-bottom: 10px;
+	}
+	
+	.shopcart-dropdown-img {
+		img {
+			width: 50px;
+		}
+	}
+	.shopcart-dropdown-info {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+
+		p {
+			font: {
+				size: 1.4rem;
+			}
+			color: $whiteColor;
+			// line-height: 50px;
+		}
+		.shopcart-dropdown-description {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 1;
+			overflow: hidden;
+			width: 140px;
+			font: {
+				size: 1.6rem;
+			}
+			color: $whiteColor;
+		}
+		.shopcart-dropdown-quantity {
+			display: flex;
+
+			.shopcart-dropdown-multiply {
+				margin-right: 5px;
+			}
+		}
+		.shopcart-dropdown-remove:hover {
+			color: red;
+		}
+	}
+	
+}				
+
+
+.shopcart-dropdown-no-product {
+
+	position: absolute;
+	background-color: black;
+	color: $whiteColor;
+	text-align: center;
+	top: 42px;
+	right: 10px;
+	width: 400px;
+	font-size: 1.4rem;
+	z-index: 1;
+}
+
+								
+
+
+										// Modal for Menu
+// .myModal {
+	
+// display: none;
+
+	.myModal-overlay {
+		position: fixed;
+		// display: flex;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0.4);
+		display: none;
+		z-index: 2;
+		// animation: fadeIn ease-in 0.3s;
+
+	}
+	.myModal-body {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 250px;
+		background-color: #111111;
+		transform: translateX(-100%);
+		transition: transform ease-in-out 0.3s;
+		.modal-menu-list {
+			margin-top: 50px;
+		}
+		.modal-menu-item {
+
+		}
+		.modal-menu-link {
+			font: {
+				size: 1.6rem;
+				weight: 500;
+			}
+			display: block;
+			padding: 10px 0;
+			text-decoration: none;
+			color: $whiteColor;
+		}
+
+		.modal-menu-link:hover {
+			background-color: #211f1f;
+		}
+
+		.icon-close {
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			height: 40px;
+			width: 50px;
+			font-size: 3rem;
+			outline: none;
+			color: $whiteColor;
+			text-align: center;
+			opacity: 1;
+		}
+
+		.icon-close:hover {
+			opacity: 0.2;
+			color: #fff;
+		}
+		
+	}
+// }
+
+
+														// Form sign in/sig up
+
+.myModal-form-signup {
+	position: fixed;
+	top: 20%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 400px;
+	height: 300px;
+	padding: 20px 20px;
+	margin: 0 auto;
+	z-index: 3;
+	background-color: #0c0a0a;
+	font: {
+		size: 1.5rem;
+	}
+	color: $whiteColor;
+	// animation: fadeIn ease-in 0.3s;
+	display: none;
+	
+}
+
+.myModal-form-signin {
+	@extend .myModal-form-signup;
+	// display: none;
+	height: 220px;
+	
+}
+.user-icon-input:checked ~ .myModal-overlay {
+	display: block;
+}
+
+.user-icon-input:checked ~ .myModal-form-signin {
+	display: block;
+}
+
+.icon-close-user {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: $whiteColor!important;
+	opacity: 1!important;
+	font: {
+		size: 2rem!important;
+	}
+	outline: none!important;
+}
+
+// .user-icon-input:checked ~ .myModal-form-signup {
+// 	display: none;
+// }
+
+
+.menu-nav-mobile:checked ~ .myModal-overlay {
+	display: block;
+}
+
+
+.menu-nav-mobile:checked ~ .myModal-body {
+	transform: translateX(0%);
+}
+
+											// Carousel
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }	
+
+  											// Content
+  
+.wrapper-content {
+	background-color: black;
+
+
+	.product-home-heading {
+	font: {
+		size: 2.4rem;
+		}
+		
+	color: $whiteColor;
+	text-align: center;
+	width: 100%;
+	padding: {
+		top: 40px;
+		bottom: 20px;
+	}
+	position: relative;
+
+	}
+
+	.product-home-heading::after {
+	content: "";
+	display: block;
+	border-bottom: 1px solid $whiteColor;
+	width: 60px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	}
+
+	.product {
+	width: 100%;
+	margin: 40px 0;
+	img {
+		box-shadow: 5px 5px #817a7a;
+		width: 100%;
+	}
+
+		.product-name {
+			margin-top: 5px;
+			color: $whiteColor;
+			justify-content: center;
+			text-align: center;
+
+		font: {
+			size: 1.4rem;
+		}
+
+		.product-name-link {
+			color: $whiteColor;
+			text-decoration: none;
+			
+
+			p {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 1;
+				overflow: hidden;
+			}
+		}
+
+		.product-price {
+			font: {
+				weight: 600;
+			}
+			display: flex;
+			justify-content: center;
+
+			.product-price--original {
+				margin-left: 10px;
+				color: #939393;
+				text-decoration: line-through;
+			}
+
+			.product-price--discounted {
+				color: #d41111;
+			}
+
+		}
+
+		}
+	}
+
+	.no-discount {
+		color: $whiteColor!important;
+		text-decoration: none!important;
+	}
+
+	// Sneaker html
+
+	.filter-menu-list {
+		@include list-default();
+	}
+
+	.filter-menu-item {
+		font: {
+			size: 1.8rem;
+			weight: 500;
+		}
+	}
+
+	.filter-menu-link {
+		padding: 10px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.filter-menu-link:hover {
+		color: rgba(255,255,255,0.7);
+	}
+
+	.plus-icon {
+		font-size: 1.2rem;
+		
+	}
+
+	.sneakers-collapse-link {
+		font: {
+			size: 1.4rem;
+		}
+	}
+
+	.sneakers-collapse-link:hover {
+		@extend .filter-menu-link:hover;
+	}
+
+	// Sort Price
+	.filter-price-group {
+		color: $whiteColor;
+		margin-top: 40px;
+
+		.filter-price-title {
+			@extend .filter-menu-item;
+		}
+
+		.filter-price-heading {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			cursor: pointer;
+		}
+
+		.sort-price-list {
+
+			cursor: pointer;
+			.sort-price-item {
+				padding: 8px 0;
+			}
+
+			.sort-price-value {
+				@extend .sneakers-collapse-link;
+				padding-left: 10px;
+	
+			}
+		}
+
+		
+	}
+
+}
+
+
+												// Footer
+footer {
+	color: $whiteColor;
+	background-color: $blackColor;
+	padding: 40px 0;
+	border-top: 1px solid $whiteColor;
+	.footer-col-1 {
+		display: flex;
+		font: {
+			size: 1.2rem;
+			weight: 500;
+		}
+		.footer-logo img {
+			height: 60px;
+		}
+
+		.footer-shop-info {
+			margin-left: 10px;
+		}
+	}
+
+	.footer-col-2 {
+		display: flex;
+		flex-direction: column;
+		// align-items: center;
+		.footer-heading {
+
+		}
+		.footer-list-content {
+			@include list-default();
+		}
+		.footer-item-content {
+
+		}
+		.footer-link-content {
+			font: {
+				size: 1.2rem;
+				weight: 500;
+			}
+			text-decoration: none;
+
+		}
+
+		.footer-link-content:hover {
+			color: rgba(255,255,255,0.8)
+		}
+	}
+
+	.footer-col-3 {
+		@extend .footer-col-2;
+		@include list-default();
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-col-4 {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		i {
+			font: {
+				size: 1.8rem;
+			}
+			margin-left: 10px;
+			color: $whiteColor;
+		}
+	}
+
+	
+}												
+
+
+@keyframes borderNav {
+	from {
+		width: 0;
+	
+	}
+	to {
+		width: 100%;
+
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@import "myresponsive";
